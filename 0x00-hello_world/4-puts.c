@@ -1,8 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/*
- * the main function of this program
+/**
+ * main - the main function of this program
+ *
+ * Description: 'the entry point of the program'
+ *
+ * Return: almost always 0
  */
 
 int main(void)
