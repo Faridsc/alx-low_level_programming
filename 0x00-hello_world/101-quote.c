@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 /**
  * main - the main function of this program
@@ -11,7 +12,8 @@
 
 int main(void)
 {
-	frintf(stderr, "%s", "and that piece of art is useful\" \
-			- Dora Korpar, 2015-10-19\n");
+	char msg[] = "and that piece of art is useful\" \
+- Dora Korpar, 2015-10-19\n";
+	fwrite(msg, 1, strlen(msg), stderr);
 	return (1);
 }
