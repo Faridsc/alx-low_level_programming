@@ -9,12 +9,13 @@
  * Description: 'the main function desc'
  *
  * Return: 0 (success)
- * */
+ */
 int main(void)
 {
 	int n;
 	int mod = 0;
 	char *msg = NULL;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	mod = n % 10;
