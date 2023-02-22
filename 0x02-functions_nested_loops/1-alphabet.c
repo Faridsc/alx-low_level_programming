@@ -1,6 +1,16 @@
 #include "main.h"
+/**
+ * print_alphabet - a function to print the alphabet in loawercase
+ * Return: void
+ */
+void print_alphabet(void)
+{
+	char c;
 
-void print_alphabet(void);
+	for (c = 'a'; c <= 'z'; c++)
+		_putchar(c);
+	putchar('\n');
+}
 
 /**
  * main - the entry point
@@ -10,19 +20,4 @@ int  main(void)
 {
 	print_alphabet();
 	return (0);
-}
-
-/**
- * print_alphabet - the print_alphabet function declaration
- * Return: void
- */
-void print_alphabet(void)
-{
-	char c;
-
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		_putchar(c);
-	}
-	_putchar('\n');
 }
