@@ -42,4 +42,9 @@ int _putchar(char c);
  */
 void print_most_numbers(void);
 
+/**
+ * more_numbers - print a table of numbers from 0 to 14 10 times
+ */
+void more_numbers(void);
+
 #endif
