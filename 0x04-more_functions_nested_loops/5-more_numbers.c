@@ -5,23 +5,21 @@
  */
 void more_numbers(void)
 {
-	char c, cc;
+	char c, cc, tmp;
 	int i;
 
 	for (i = 0; i < 10; i++)
 	{
-		for (c = '0', cc = '0'; c <= '9'; c++)
+		for (c = '0', cc = '0'; c <= '>'; c++)
 		{
-			if (cc == '0')
-				_putchar(c);
-			if (c == '9')
+			tmp = (c <= '9')? c : '1';
+			_putchar(tmp);
+			if (c > '9')
 			{
-				c = '1';
-				_putchar('1');
 				_putchar(cc);
 				cc++;
 			}
-			if (cc == '5')
+			if ( cc == '5')
 				break;
 		}
 		_putchar('\n');
