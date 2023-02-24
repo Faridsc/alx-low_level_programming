@@ -15,4 +15,12 @@ int _isupper(int c);
  */
 int _isdigit(int c);
 
+/**
+ * mul - calculate the product of two ints
+ * @a: the first operand
+ * @b: the second operand
+ * Return: the product of @a and @b
+ */
+int mul(int a, int b);
+
 #endif
