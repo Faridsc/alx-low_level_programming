@@ -37,4 +37,9 @@ void print_numbers(void);
  */
 int _putchar(char c);
 
+/**
+ * print_most_numbers - print the numbers from 1 to 9 except 2 and 4
+ */
+void print_most_numbers(void);
+
 #endif
