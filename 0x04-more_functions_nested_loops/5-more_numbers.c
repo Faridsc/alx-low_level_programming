@@ -12,14 +12,14 @@ void more_numbers(void)
 	{
 		for (c = '0', cc = '0'; c <= '>'; c++)
 		{
-			tmp = (c <= '9')? c : '1';
+			tmp = (c <= '9') ? c : '1';
 			_putchar(tmp);
 			if (c > '9')
 			{
 				_putchar(cc);
 				cc++;
 			}
-			if ( cc == '5')
+			if (cc == '5')
 				break;
 		}
 		_putchar('\n');
