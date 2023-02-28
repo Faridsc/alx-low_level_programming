@@ -11,7 +11,7 @@ void print_rev(char *s)
 	tmp = s;
 	while (*s != '\0')
 		s++;
-	rev_s = s;
+	rev_s = s - 1;
 	while (rev_s >= tmp)
 	{
 		_putchar(*rev_s);
