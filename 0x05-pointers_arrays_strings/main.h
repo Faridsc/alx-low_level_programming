@@ -14,4 +14,10 @@ int _putchar(char c);
   */
 void reset_to_98(int *n);
 
+/**
+ * swap_int - swaps two int values
+ * @a: a pointer to the value of the first int
+ * @b: a pointer to the second int value
+ */
+void swap_int(int *a, int *b);
 #endif
