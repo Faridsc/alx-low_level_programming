@@ -27,4 +27,10 @@ void swap_int(int *a, int *b);
  * Return: an int representing the length in Bytes
  */
 int _strlen(char *s);
+
+/**
+ * _puts - a function to print a string to the std output
+ * @s: the string pointer
+ */
+void _puts(char *s);
 #endif
