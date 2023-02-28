@@ -20,4 +20,11 @@ void reset_to_98(int *n);
  * @b: a pointer to the second int value
  */
 void swap_int(int *a, int *b);
+
+/**
+ * _strlen - calculate the length of a string
+ * @s: the string pointer
+ * Return: an int representing the length in Bytes
+ */
+int _strlen(char *s);
 #endif
