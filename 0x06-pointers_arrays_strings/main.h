@@ -9,10 +9,10 @@
 int _putchar(char c);
 
 /**
- * _strcat - appends the @src to the @dest 
+ * _strcat - appends the @src to the @dest
  * @dest: a char pointer; the destination var
  * @src: a char pointer; the source string var
- * Return: char *; the pointer to the @dest 
+ * Return: char *; the pointer to the @dest
  */
 char *_strcat(char *dest, char *src);
 #endif
