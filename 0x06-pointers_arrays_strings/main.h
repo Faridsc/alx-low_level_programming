@@ -15,4 +15,13 @@ int _putchar(char c);
  * Return: char *; the pointer to the @dest
  */
 char *_strcat(char *dest, char *src);
+
+/**
+ * _strncat - concatinate the @n chars at most from @src to the @dest
+ * @dest: char * the destination char *
+ * @src: the source char *
+ * @n: the number of chars to add
+ * Return: char * the destination pointer
+ */
+char *_strncat(char *dest, char *src, int n);
 #endif
