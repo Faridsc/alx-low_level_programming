@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * _strncpy - copy the @src to dest with @n chars
  * @dest: char * the dest string
@@ -21,14 +22,16 @@ char *_strncpy(char *dest, char *src, int n)
 	 * this loop is to ensure that the \0 char is assigned
 	 * if the n is > of the src length
 	 */
-	while (i < n){
-		dest++;
+	while (i < n)
+	{
+		*(dest++) = '\0';
 		i++;
 	}
+
 	/*
 	 * null-byte is assigned if the i reaches the n length
 	 */
-	*dest = i == n ? '\0' : *dest;
+	dest[i] = '\0';
 
 	return (ret);
 }
