@@ -27,4 +27,12 @@ char *_memset(char *s, char b, unsigned int n);
  */
 char *_memcpy(char *dest, char *src, unsigned int n);
 
+/**
+ * _strchar - searches for a char @c in a string @s
+ * @s: the source string
+ * @c: the char to search
+ * Return: NULL if @c not found or (char *) to the first occurrence of @c
+ */
+char *_strchr(char *s, char c);
+
 #endif
