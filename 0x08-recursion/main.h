@@ -33,4 +33,12 @@ int _strlen_recursion(char *s);
  */
 int factorial(int n);
 
+/**
+ * _pow_recursion - calculates the x power y
+ * @x: int
+ * @y: int
+ * Return: int @x^@y or -1 if y < 0
+ */
+int _pow_recursion(int x, int y);
+
 #endif
