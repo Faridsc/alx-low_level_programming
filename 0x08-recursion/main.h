@@ -41,4 +41,11 @@ int factorial(int n);
  */
 int _pow_recursion(int x, int y);
 
+/**
+ * _sqrt_recursion - calculates the sqrt of @n
+ * @n: int to calculates its sqrt
+ * Return: int the sqrt itself ;)
+ */
+int _sqrt_recursion(int n);
+
 #endif
