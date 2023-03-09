@@ -13,5 +13,10 @@ int _putchar(char c);
  * @s: a string to print
  */
 void _puts_recursion(char *s);
+/**
+ * _print_rev_recursion - prints a reverse of the string @s
+ * @s: a string to print
+ */
+void _print_rev_recursion(char *s);
 
 #endif
