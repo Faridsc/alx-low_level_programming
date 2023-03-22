@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * print_name - prints a name in the std output
  * @name: a string to print
@@ -7,5 +8,6 @@
 
 void print_name(char *name, void (*f)(char *name))
 {
-	f(name);
+	if (f != NULL)
+		f(name);
 }
