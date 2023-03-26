@@ -19,13 +19,13 @@ char *_strdup(char *str)
 	/*
 	 * this calculate the string length
 	 */
-	while (s)
+	while (*s != '\0')
 	{
 		len++;
 		s++;
 	}
 	dup = (char *)malloc((len + 2) * sizeof(char));
-	for (i = 0; i < len + 1; i++)
+	for (i = 0; i < len + 2; i++)
 		dup[i] = str[i];
 	return (dup);
 }
