@@ -23,7 +23,7 @@ char *create_array(unsigned int size, char c)
 		while (size)
 		{
 			ret[size] = c;
-			--size;
+			size--;
 		}
 	}
 	return (ret);
