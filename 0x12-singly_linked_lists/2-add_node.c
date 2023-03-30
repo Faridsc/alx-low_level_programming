@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <strings.h>
+#include <string.h>
 #include "defs.h"
 
 /**
@@ -7,10 +7,10 @@
  * @s: the string to check
  * Return: the string length as size_t
  */
-size_t _strlen(char *s)
+unsigned int _strlen(char *s)
 {
 	char *ss;
-	size_t len;
+	unsigned int len;
 
 	len = 0;
 	ss = s;
@@ -44,5 +44,5 @@ list_t *add_node(list_t **head, char *str)
 	node->str = str;
 	node->next = *head;
 	*head = node;
-	return (*head);
+	return (node);
 }
