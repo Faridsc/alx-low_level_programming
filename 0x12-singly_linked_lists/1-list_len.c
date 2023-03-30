@@ -2,7 +2,7 @@
 #include "defs.h"
 
 /**
- * print_len - prints the full content of a singly linked list
+ * list_len - prints the full content of a singly linked list
  * @h: list_t list to print
  * Return: the size of the list
  */
