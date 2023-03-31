@@ -40,9 +40,9 @@ list_t *add_node(list_t **head, char *str)
 	node = (list_t *)malloc(sizeof(list_t));
 	if (node == NULL)
 		return (NULL);
-	node->len = strlen(str);
+	node->len = _strlen(str);
 	node->str = str;
 	node->next = *head;
 	*head = node;
-	return (node);
+	return (*head);
 }
