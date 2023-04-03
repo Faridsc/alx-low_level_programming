@@ -21,7 +21,6 @@ char *formating(char c)
 	case '\0':
 		return ("%p%s");
 	default:
-
 		return (NULL);
 	}
 }
@@ -38,7 +37,7 @@ void print_all(const char *const format, ...)
 	int i;
 
 	i = 0;
-	if (format == NULL)
+	if (format == NULL || format[0] == '\0')
 	{
 		printf("\n");
 		return;
@@ -68,7 +67,6 @@ void print_all(const char *const format, ...)
 			break;
 
 		default:
-			printf("\n");
 			break;
 		}
 		i++;
