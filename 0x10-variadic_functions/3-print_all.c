@@ -26,43 +26,6 @@ char *formating(char c)
 }
 
 /**
- * printt - print the adapted string
- * @c: the char to adapt the string to print
- * @l: the va_list
- * @format: the format string
- * @s: formatted string
- * @i: the incrimenting index
- * Return: void
- */
-void printt(char c, va_list l, char *format, char *s, int i)
-{
-	char *ss;
-
-	switch (c)
-	{
-	case 'c':
-		printf(s, va_arg(l, int), (format[i + 1]) ? ", " : "\n");
-		break;
-	case 'i':
-		printf(s, va_arg(l, int), (format[i + 1]) ? ", " : "\n");
-		break;
-	case 'f':
-
-		printf(s, va_arg(l, double), (format[i + 1]) ? ", " : "\n");
-		break;
-	case 's':
-		ss = va_arg(l, char *);
-
-		printf(ss != NULL ? s : formating('\0'), ss, (format[i + 1]) ? ", " : "\n");
-		break;
-
-	default:
-		printf("%s", format[i + 1] ? "" : "\n");
-		break;
-	}
-}
-
-/**
  * print_all - prints all the variadic args
  * @format: the formated string
  * Return: nothing (void)
@@ -70,7 +33,7 @@ void printt(char c, va_list l, char *format, char *s, int i)
 void print_all(const char *const format, ...)
 {
 	va_list l;
-	char c, *s;
+	char c, *s, *ss;
 	int i;
 
 	i = 0;
@@ -85,7 +48,25 @@ void print_all(const char *const format, ...)
 	{
 		c = format[i];
 		s = formating(c);
-		printt(c, l, format, s, i);
+		switch (c)
+		{
+		case 'c':
+			printf(s, va_arg(l, int), (format[i + 1]) ? ", " : "\n");
+			break;
+		case 'i':
+			printf(s, va_arg(l, int), (format[i + 1]) ? ", " : "\n");
+			break;
+		case 'f':
+			printf(s, va_arg(l, double), (format[i + 1]) ? ", " : "\n");
+			break;
+		case 's':
+			ss = va_arg(l, char *);
+			printf(ss != NULL ? s : formating('\0'), ss, (format[i + 1]) ? ", " : "\n");
+			break;
+		default:
+			printf("%s", format[i + 1] ? "" : "\n");
+			break;
+		}
 		i++;
 	}
 	va_end(l);
