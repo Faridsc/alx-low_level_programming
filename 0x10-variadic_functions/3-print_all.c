@@ -67,6 +67,7 @@ void print_all(const char *const format, ...)
 			break;
 
 		default:
+			printf("%s", format[i + 1] ? "" : "\n");
 			break;
 		}
 		i++;
