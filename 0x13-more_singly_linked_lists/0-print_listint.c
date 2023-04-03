@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "defs.h"
+
 /**
  * print_listint - prints all the @h int elements
  * @h: listint_t header
@@ -11,9 +12,9 @@ size_t print_listint(const listint_t *h)
 
 	if (h == NULL)
 	{
-		printf("\n");
 		return (0);
 	}
+
 	l = 0;
 	while (1)
 	{
