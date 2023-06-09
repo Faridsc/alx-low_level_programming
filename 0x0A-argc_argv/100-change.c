@@ -18,7 +18,9 @@ int exact_coins(int cents)
 	for (i = 0; i < 5; i++)
 	{
 		m += r / coins[i];
-		r = cents % coins[i];
+		r = r % coins[i];
+		if (r == 0)
+			break;
 	}
 	return (m);
 }
@@ -32,7 +34,7 @@ int exact_coins(int cents)
  */
 int main(int argc, char **argv)
 {
-	int d, res;
+	int d;
 
 	if (argc != 2)
 	{
